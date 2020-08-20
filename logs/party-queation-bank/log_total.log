@@ -1,0 +1,75 @@
+2020-07-19 18:33:09.653  INFO 6227 --- [restartedMain] c.t.pqb.PartyQuestionBankApplication     : Starting PartyQuestionBankApplication on xubindeMacBook-Pro.local with PID 6227 (/Users/xubin/local/workout_project/Guns/target/classes started by xubin in /Users/xubin/local/workout_project/Guns)
+2020-07-19 18:33:09.656  INFO 6227 --- [restartedMain] c.t.pqb.PartyQuestionBankApplication     : The following profiles are active: dev
+2020-07-19 18:33:09.713  INFO 6227 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-19 18:33:09.713  INFO 6227 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-19 18:33:11.074  INFO 6227 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-19 18:33:11.077  INFO 6227 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-07-19 18:33:11.133  INFO 6227 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
+2020-07-19 18:33:11.474  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.tuling.pqb.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$7f297b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:11.534  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:11.698  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:11.701  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [com.tuling.pqb.config.EhCacheConfig$$EnhancerBySpringCGLIB$$36b2033b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:11.705  INFO 6227 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2020-07-19 18:33:16.928  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:16.930  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:16.952  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'pqbProperties' of type [com.tuling.pqb.config.properties.PqbProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:16.959  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'defaultWebSessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:16.974  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroDbRealm' of type [com.tuling.pqb.core.shiro.ShiroDbRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:16.974  INFO 6227 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.tuling.pqb.core.shiro.ShiroDbRealm.authorizationCache' does not yet exist.  Creating now.
+2020-07-19 18:33:16.983  INFO 6227 --- [restartedMain] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.tuling.pqb.core.shiro.ShiroDbRealm.authorizationCache]
+2020-07-19 18:33:16.985  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:16.987  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodInvokingFactoryBean' of type [org.springframework.beans.factory.config.MethodInvokingFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:17.061  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.tuling.pqb.config.web.WebConfig$$EnhancerBySpringCGLIB$$c5871476] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:17.106  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:17.111  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:17.120  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:17.121  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:17.196  INFO 6227 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc8ac26a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-19 18:33:18.095  INFO 6227 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9831 (http)
+2020-07-19 18:33:18.122  INFO 6227 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-19 18:33:18.122  INFO 6227 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-07-19 18:33:18.132  INFO 6227 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/xubin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-07-19 18:33:18.240  INFO 6227 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-19 18:33:18.240  INFO 6227 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8527 ms
+2020-07-19 18:33:18.971  INFO 6227 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-19 18:33:19.292  INFO 6227 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-19 18:33:22.065  INFO 6227 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-19 18:33:25.473  INFO 6227 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-07-19 18:33:26.411  INFO 6227 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-07-19 18:33:26.430  INFO 6227 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-07-19 18:33:26.430  INFO 6227 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-07-19 18:33:26.431  INFO 6227 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-07-19 18:33:26.432  INFO 6227 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-07-19 18:33:26.432  INFO 6227 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-07-19 18:33:26.432  INFO 6227 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-07-19 18:33:26.432  INFO 6227 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@74c003a7
+2020-07-19 18:33:26.480  INFO 6227 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-19 18:33:26.601  INFO 6227 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-19 18:33:26.630  INFO 6227 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-19 18:33:26.680  INFO 6227 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-19 18:33:26.703  INFO 6227 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-07-19 18:33:26.703  INFO 6227 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-07-19 18:33:26.753  INFO 6227 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9831 (http) with context path ''
+2020-07-19 18:33:26.758  INFO 6227 --- [restartedMain] c.t.pqb.PartyQuestionBankApplication     : Started PartyQuestionBankApplication in 37.696 seconds (JVM running for 44.418)
+2020-07-19 18:33:26.764  INFO 6227 --- [restartedMain] c.t.pqb.PartyQuestionBankApplication     : PartyQuestionBankApplication is success!
+2020-07-19 18:33:38.035  INFO 6227 --- [http-nio-9831-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-19 18:33:38.036  INFO 6227 --- [http-nio-9831-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-19 18:33:38.053  INFO 6227 --- [http-nio-9831-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-07-19 18:33:38.066  INFO 6227 --- [http-nio-9831-exec-1] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2020-07-19 18:34:36.940  INFO 6227 --- [Thread-85] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-07-19 18:34:36.941  INFO 6227 --- [Thread-85] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-07-19 18:34:36.942  INFO 6227 --- [Thread-85] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-07-19 18:34:36.942  INFO 6227 --- [Thread-85] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-07-19 18:34:36.942  INFO 6227 --- [Thread-85] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-07-19 18:34:36.942  INFO 6227 --- [Thread-85] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-07-19 18:34:36.970  INFO 6227 --- [Thread-85] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-07-19 18:34:36.972  INFO 6227 --- [Thread-85] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-19 18:34:36.973  INFO 6227 --- [Thread-85] a.s.s.m.AbstractValidatingSessionManager : Disabled session validation scheduler.
+2020-07-19 18:34:36.973  INFO 6227 --- [Thread-85] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager

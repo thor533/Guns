@@ -1,0 +1,37 @@
+# Mysql数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://218.56.134.116:1533/party_question_bank?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    username: root
+    password: Qqwe@1256
+    filters: wall,mergeStat
+    data-source-name: gunsdb
+  redis:
+    host: 218.56.134.116
+    port: 36379
+    password:
+    database: 0
+    lettuce:
+      pool:
+        max-active: 100
+        max-idle: 50
+        max-wait: 6000
+        min-idle: 10
+    timeout: 1000
+# 多数据源情况的配置
+pqb:
+  muti-datasource:
+    open: false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/party_question_bank?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    username: root
+    password: root
+    data-source-name: otherdb
+mini-program:
+  app-id: wx1b15a57bf6dfe0f7
+  appSecret: 0c5cce76d857f4f5a063d3829376d717
+  jscode2session-url: https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code
+
+log:
+  path: ./logs/party-queation-bank

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tuling.pqb.modular.bus.mapper.QuestionBankMapper">
+    <resultMap id="BaseResultMap" type="com.tuling.pqb.modular.bus.entity.QuestionBank">
+        <!--@mbg.generated-->
+        <!--@Table bus_question_bank-->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="content" jdbcType="VARCHAR" property="content"/>
+        <result column="type" jdbcType="VARCHAR" property="type"/>
+        <result column="option_a" jdbcType="VARCHAR" property="optionA"/>
+        <result column="option_b" jdbcType="VARCHAR" property="optionB"/>
+        <result column="option_c" jdbcType="VARCHAR" property="optionC"/>
+        <result column="option_d" jdbcType="VARCHAR" property="optionD"/>
+        <result column="answer" jdbcType="VARCHAR" property="answer"/>
+        <result column="analysis" jdbcType="VARCHAR" property="analysis"/>
+        <result column="user_question_type" jdbcType="VARCHAR" property="userQuestionType"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, content, `type`, option_a, option_b, option_c, option_d, answer, analysis, user_question_type,
+        create_time
+    </sql>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update bus_question_bank
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="content = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.content,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="`type` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.type,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="option_a = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.optionA,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="option_b = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.optionB,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="option_c = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.optionC,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="option_d = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.optionD,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="answer = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.answer,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="analysis = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.analysis,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="user_question_type = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.userQuestionType,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="create_time = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=INTEGER} then #{item.createTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+        </trim>
+        where id in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.id,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into bus_question_bank
+        (content, `type`, option_a, option_b, option_c, option_d, answer, analysis, user_question_type,
+        create_time)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.content,jdbcType=VARCHAR}, #{item.type,jdbcType=VARCHAR}, #{item.optionA,jdbcType=VARCHAR},
+            #{item.optionB,jdbcType=VARCHAR}, #{item.optionC,jdbcType=VARCHAR}, #{item.optionD,jdbcType=VARCHAR},
+            #{item.answer,jdbcType=VARCHAR}, #{item.analysis,jdbcType=VARCHAR},
+            #{item.userQuestionType,jdbcType=VARCHAR},
+            #{item.createTime,jdbcType=TIMESTAMP})
+        </foreach>
+    </insert>
+
+    <!-- 查询列表 -->
+    <select id="queryQuestionByType" resultMap="BaseResultMap">
+        select
+        *
+        from bus_question_bank
+        <where>
+            <if test="type != null">
+                type = #{type,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+    <!-- 查询列表 -->
+    <select id="queryQuestionScope" resultMap="BaseResultMap">
+    SELECT
+	*
+FROM ((select
+   *
+    from bus_question_bank
+    where id &lt;= #{id,jdbcType=INTEGER} ORDER BY id DESC LIMIT 10)
+        UNION all
+   (select
+   *
+      from bus_question_bank
+    where id &gt;= #{id,jdbcType=INTEGER}  LIMIT 10)) a order by id
+  </select>
+
+
+</mapper>

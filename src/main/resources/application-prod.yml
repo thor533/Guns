@@ -1,0 +1,38 @@
+# Mysql数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-2zesl22vp596p8e7i.mysql.rds.aliyuncs.com:3306/party_question_bank?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=Asia/Shanghai
+    username: party_question_bank
+    password: L@ngy@5351
+    filters: wall,mergeStat
+    data-source-name: gunsdb
+  redis:
+    host: r-2zei3h6q7trekqw8lw.redis.rds.aliyuncs.com
+    port: 6379
+    password: 123qwe!@#
+    database: 0
+    lettuce:
+      pool:
+        max-active: 100
+        max-idle: 50
+        max-wait: 6000
+        min-idle: 10
+    timeout: 6000
+# 多数据源情况的配置
+pqb:
+  muti-datasource:
+    open: false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-2zesl22vp596p8e7i.mysql.rds.aliyuncs.com:3306/party_question_bank?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=Asia/Shanghai
+    username: party_question_bank
+    password: L@ngy@5351
+    data-source-name: otherdb
+mini-program:
+  app-id: wx1b15a57bf6dfe0f7
+  appSecret: 0c5cce76d857f4f5a063d3829376d717
+  jscode2session-url: https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code
+# 阿里短信
+
+log:
+  path: /home/cntytz/logs/party-queation-bank
